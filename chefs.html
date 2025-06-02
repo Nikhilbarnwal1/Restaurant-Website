@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styledropdown.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefs  - dinewith Nikhil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        
+        .chef-gallery {
+            padding: 40px;
+            text-align: center;
+        }
+        .chef-gallery h1 {
+            margin-bottom: 20px;
+        }
+        .chef-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .chef-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .chef-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+        }
+        .chef-card h3 {
+            margin: 10px 0 5px;
+        }
+        .chef-card p {
+            color: #777;
+            margin: 0;
+        }
+        h1{
+            color: #e67e22;
+
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li>
+                <a href="#">Menu ▾</a>
+                <ul class="dropdown">
+                    <li><a href="starter.html" target="_blank">Starters</a></li>
+                    <li><a href="maincourse.html" target="_blank">Main Course</a></li>
+                    <li><a href="desserts.html" target="_blank">Desserts</a></li>
+                    <li><a href="beverages.html" target="_blank">Beverages</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About Us ▾</a>
+                <ul class="dropdown">
+                    <li><a href="ourstory.html" target="_blank">Our Story</a></li>
+                    <li><a href="chefs.html">Chefs</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services ▾</a>
+                <ul class="dropdown">
+                    <li><a href="catering.html" target="_blank">Catering</a></li>
+                    <li><a href="onlineorder.html" target="_blank">Online Order</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="chef-gallery">
+        <h1>Meet Our Master Chefs</h1>
+        <div class="chef-container">
+            <div class="chef-card">
+                <img src="chef1.png" alt="Chef 1">
+                <h3>Chef Sanjeev kapoor</h3>
+                <p>Head Chef</p>
+            </div>
+            <div class="chef-card">
+                <img src="chef2.png" alt="Chef 2">
+                <h3>Chef Vikash khanna</h3>
+                <p>Starter Master</p>
+            </div>
+            <div class="chef-card">
+                <img src="chef3.png" alt="Chef 3">
+                <h3>Chef Ranveer Brar</h3>
+                <p>Grill Master</p>
+            </div>
+            <div class="chef-card">
+                <img src="chef4.png" alt="Chef 4">
+                <h3>Chef Kunal Kapoor</h3>
+                <p>Sous Chef</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
